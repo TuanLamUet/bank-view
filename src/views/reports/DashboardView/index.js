@@ -39,7 +39,7 @@ const Dashboard = () => {
   const [totalAmount, setTotalAmount] = useState(null);
 
   const fetchData = async () => {
-    const res = await axios.get('http://18.232.124.209:3305/api/loan-bank');
+    const res = await axios.get('http://18.232.124.209/api/loan-bank');
     if (res.status) {
       const price = res.data.data.loan;
       const allRequest = res.data.data.loan.length;

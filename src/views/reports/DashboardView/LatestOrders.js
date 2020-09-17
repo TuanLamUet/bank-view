@@ -42,7 +42,7 @@ const LatestOrders = ({ className, ...rest }) => {
   const [users, setUsers] = useState(null);
 
   const fetchData = async () => {
-    const res = await axios.get('http://18.232.124.209:3305/api/loan-bank');
+    const res = await axios.get('http://18.232.124.209/api/loan-bank');
     if (res.status) {
       setOrders(res.data.data.loan);
       setUsers(res.data.data.user);
@@ -109,7 +109,7 @@ const LatestOrders = ({ className, ...rest }) => {
                           bodyFormData.append('loanId', order._id);
                           const res = await axios({
                             method: 'patch',
-                            url: 'http://18.232.124.209:3305/api/loan-bank',
+                            url: 'http://18.232.124.209/api/loan-bank',
                             data: bodyFormData,
                             headers: { 'Content-Type': 'multipart/form-data' }
                           });
