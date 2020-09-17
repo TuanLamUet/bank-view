@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/bank-view/static/js/main.49730e33.chunk.js",
+    "main.js.map": "/bank-view/static/js/main.49730e33.chunk.js.map",
+    "runtime-main.js": "/bank-view/static/js/runtime-main.a7a3fce1.js",
+    "runtime-main.js.map": "/bank-view/static/js/runtime-main.a7a3fce1.js.map",
+    "static/css/2.18fb2ca0.chunk.css": "/bank-view/static/css/2.18fb2ca0.chunk.css",
+    "static/js/2.0a0d296f.chunk.js": "/bank-view/static/js/2.0a0d296f.chunk.js",
+    "static/js/2.0a0d296f.chunk.js.map": "/bank-view/static/js/2.0a0d296f.chunk.js.map",
+    "index.html": "/bank-view/index.html",
+    "precache-manifest.ab6737807c0ca5f385933c2027174397.js": "/bank-view/precache-manifest.ab6737807c0ca5f385933c2027174397.js",
+    "service-worker.js": "/bank-view/service-worker.js",
+    "static/css/2.18fb2ca0.chunk.css.map": "/bank-view/static/css/2.18fb2ca0.chunk.css.map",
+    "static/js/2.0a0d296f.chunk.js.LICENSE.txt": "/bank-view/static/js/2.0a0d296f.chunk.js.LICENSE.txt",
+    "static/media/logo.jpg": "/bank-view/static/media/logo.06039bfb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7a3fce1.js",
+    "static/css/2.18fb2ca0.chunk.css",
+    "static/js/2.0a0d296f.chunk.js",
+    "static/js/main.49730e33.chunk.js"
+  ]
+}
