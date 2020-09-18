@@ -18,7 +18,7 @@ const routes = [
     children: [
       { path: 'account', element: <AccountView /> },
       { path: 'customers', element: <CustomerListView /> },
-      { path: 'dashboard', element: <DashboardView /> },
+      { path: '/', element: <DashboardView /> },
       { path: 'products', element: <ProductListView /> },
       { path: 'settings', element: <SettingsView /> },
       { path: '*', element: <Navigate to="/404" /> }
@@ -31,7 +31,7 @@ const routes = [
       { path: 'login', element: <LoginView /> },
       { path: 'register', element: <RegisterView /> },
       { path: '404', element: <NotFoundView /> },
-      { path: '/', element: <Navigate to="/app/dashboard" /> },
+      { path: '/', element: <Navigate to="/app/" /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
   }
