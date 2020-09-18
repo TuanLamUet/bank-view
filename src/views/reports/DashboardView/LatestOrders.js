@@ -40,7 +40,7 @@ const LatestOrders = ({ className, ...rest }) => {
   const classes = useStyles();
   const [orders, setOrders] = useState(null);
   const [users, setUsers] = useState(null);
-
+  const [hover, setHover] = useState(false);
   const fetchData = async () => {
     const res = await axios.get('http://18.232.124.209/api/loan-bank');
     if (res.status) {
@@ -54,6 +54,7 @@ const LatestOrders = ({ className, ...rest }) => {
   if (!users || !orders) {
     return null;
   }
+
   return (
     <Card
       className={clsx(classes.root, className)}
@@ -76,6 +77,7 @@ const LatestOrders = ({ className, ...rest }) => {
                     </TableSortLabel>
                   </Tooltip>
                 </TableCell>
+                <TableCell style ={{textAlign: 'center'}}>Điểm tín dụng</TableCell>
                 <TableCell>Số tiền</TableCell>
                 <TableCell style={{textAlign: "center"}}>Trạng thái</TableCell>
                 <TableCell>Lý do vay</TableCell>
@@ -91,9 +93,12 @@ const LatestOrders = ({ className, ...rest }) => {
                   <TableCell>
                     {moment(order.createdAt).format('DD/MM/YYYY')}
                   </TableCell>
+                  <TableCell style ={{textAlign: 'center', color: '#f44336', fontSize: '17px', fontWeight: '500'}}>
+                    {users[index].point}
+                  </TableCell>
                   <TableCell>{handlePrice(order.money)}</TableCell>
                   <TableCell>
-                    {order.status === 'chờ duyệt' && (
+                    {order.status === 'Chờ duyệt' && (
                       <div
                         style={{
                           backgroundColor:
@@ -121,7 +126,7 @@ const LatestOrders = ({ className, ...rest }) => {
                         {order.status}
                       </div>
                     )}
-                    {order.status === 'đã duyệt' && (
+                    {order.status === 'Đã duyệt' && (
                       <div
                         style={{
                           backgroundColor:
